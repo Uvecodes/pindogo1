@@ -1,0 +1,395 @@
+/* css reset values*/
+
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box ;
+
+}
+
+/* general html/body style*/
+
+html, body {
+    font-family:'Roboto', 'Courier New', Courier, monospace;
+    background-image: url(https://i.pinimg.com/1200x/e8/f2/93/e8f29391bfd31ba8e74a7f7266afc891.jpg);
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-size: cover;    
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+ img{
+    display: inline-block;
+    position: relative;
+    height:8%;
+    width :8%;
+    top: 0.1875rem;
+    left: 21.25rem;
+
+}
+.login-button{
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    
+    font-size: 1.125rem;
+    left: 56.875rem;
+    padding: 0.75rem 1.375rem;
+    top: -3.125rem;
+    
+}
+
+.login-button:hover{
+    background-color: rgba(100, 100, 100, 0.5);
+    color: aliceblue;
+}
+
+.banner{
+    
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.75rem;
+    text-wrap: wrap;
+    margin-top: -0.625rem;
+
+}
+
+.message{
+   
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    text-wrap: wrap;
+    margin-top: 2.8125rem;
+    color: rgb(201, 203, 203);
+   
+
+
+}
+
+.form-group input{
+    border-radius: 10px;
+    background-color: rgba(110, 110, 110, 0.3);
+    width: 18%;
+    position: relative;
+    left: 33.125rem;
+    padding: 0.9375rem;
+    margin-top: 3.125rem;
+    color: #fff;
+    border: none;
+    font-size: .97rem;
+}
+
+.join-us{
+    position: relative;
+    left: 33.75rem;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    font-size: .97rem;
+    font-weight: bold;
+    border: none;
+
+}
+
+.join-us:hover{
+    background-color: rgba(100, 100, 100, 0.5);
+    color: aliceblue;
+}
+
+.arrow{
+    position: relative;
+    display: inline-block;
+    left: 550px;
+    top: 30px;
+    height: 6%;
+    width: 6%;
+}
+
+
+
+   
+
+
+.sign-up-section {
+    border: 0.1px inset rgba(255, 255, 255, 0.3); /* Adjust the color and thickness */
+    padding: 0.3125rem;
+    border-radius: 10px; /* Optional: For rounded edges */
+    width: 43%; /* Optional: Restrict the width */
+    margin: 3.75rem auto; /* Center align horizontally */
+
+}
+
+
+
+.sign-up{
+    
+    display: flex;
+    align-items: center; /* Aligns content vertically in the center */
+    gap: 0.625rem; /* Adds space between text and button */
+    padding: 0.625rem;
+   font-weight: 300;
+   
+}
+
+
+
+.register {
+    padding: .625rem 1.125rem;
+    background-color: rgba(100, 100, 100, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    
+}
+
+.register:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+
+/*media queries*/
+
+
+
+
+
+
+
+
+/*chat gpt assisted media queries*/
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        height: 10%;
+        width: 10%;
+        top: 0.5rem;
+        left: 5rem;
+    }
+
+    .login-button {
+        font-size: 1rem;
+        left: 23rem;
+        top: -0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .banner {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .message {
+        font-size: 0.875rem;
+        margin-top: 2rem;
+    }
+
+    .form-group input {
+        width: 80%;
+        left: 10%;
+        margin-top: 2rem;
+    }
+
+    .join-us {
+        left: 10%;
+        width: 80%;
+        padding: 0.75rem 1rem;
+    }
+
+    .arrow {
+        left: 10%;
+        top: 1rem;
+        height: 8%;
+        width: 8%;
+    }
+
+    .sign-up-section {
+        width: 90%;
+    }
+}
+
+/* Small devices (phones and small tablets, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        font-size: 15px;
+    }
+
+    img {
+        height: 8%;
+        width: 8%;
+        left: 10rem;
+    }
+
+    .login-button {
+        font-size: 1rem;
+        left: 31rem;
+        top: -1.1rem;
+    }
+
+    .banner {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .form-group input {
+        width: 70%;
+        left: 15%;
+    }
+
+    .join-us {
+        left: 15%;
+        width: 70%;
+    }
+
+    .arrow {
+        left: 16%;
+        top: 1.3rem;
+    }
+
+    .sign-up-section {
+        width: 80%;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+
+    img {
+        height: 7%;
+        width: 7%;
+        left: 7rem;
+    }
+
+    .login-button {
+        font-size: 1.125rem;
+        left: 35rem;
+        top: -1.2rem;
+    }
+
+    .banner {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .form-group input {
+        width: 50%;
+        left: 25%;
+    }
+
+    .join-us {
+        left: 25%;
+        width: 50%;
+    }
+
+    .arrow {
+        left: 27%;
+        top: 1.2rem;
+    }
+
+    .sign-up-section {
+        width: 70%;
+    }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 17px;
+    }
+
+    img {
+        height: 6%;
+        width: 6%;
+        left: 10rem;
+    }
+
+    .login-button {
+        font-size: 1.125rem;
+        left: 44.8rem;
+        top: -1.6rem;
+    }
+
+    .banner {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+    }
+
+    .form-group input {
+        width: 30%;
+        left: 30%;
+    }
+
+    .join-us {
+        left: 30%;
+        width: 14%;
+        
+    }
+
+    .arrow {
+        left: 30.8%;
+        top: 1.8rem;
+    }
+
+    .sign-up-section {
+        width: 60%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    img {
+        height: 8%;
+        width: 8%;
+        left: 16rem;
+    }
+
+    .login-button {
+        font-size: 1.125rem;
+        left: 50.475rem;
+        top: -3.425rem;
+    }
+
+    .banner {
+        font-size: 3.75rem;
+    }
+
+    .form-group input {
+        width: 18%;
+        left: 28.925rem;
+    }
+
+    .join-us {
+        left: 29.75rem;
+        width: auto;
+    }
+
+    .arrow {
+        left: 29.9rem;
+        top: 32px;
+    }
+
+    .sign-up-section {
+        width: 43%;
+    }
+}*/
